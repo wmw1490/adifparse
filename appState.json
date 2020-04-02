@@ -1,0 +1,97 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "3fee4005-ea4c-4869-b7de-4d07f61c0f2c": {
+        "id": "3fee4005-ea4c-4869-b7de-4d07f61c0f2c",
+        "parent": null,
+        "name": "adifparse.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "adifparse.py",
+        "cursor": {
+          "lineNumber": 19,
+          "column": 31
+        },
+        "config": {
+          "runtime": "python2.7",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      }
+    },
+    "openFiles": [
+      "3fee4005-ea4c-4869-b7de-4d07f61c0f2c"
+    ],
+    "currentFileId": "3fee4005-ea4c-4869-b7de-4d07f61c0f2c",
+    "resources": {
+      "sqssqsRmsAdif": {
+        "name": "sqssqsRmsAdif",
+        "type": "SQS",
+        "config": {
+          "mode": 1,
+          "existing": true,
+          "name": "sqs-rms-adif",
+          "url": "https://sqs.us-east-2.amazonaws.com/558288721055/sqs-rms-adif",
+          "selectedRegion": "us-east-2",
+          "deliveryDelay": "0",
+          "deliveryDelayUnit": "seconds",
+          "queueType": "standardQueue",
+          "defaultVisibilityTimeout": "30",
+          "defaultVisibilityTimeoutUnit": "seconds",
+          "messageRetentionPeriod": "1209600",
+          "messageRetentionPeriodUnit": "seconds",
+          "maximumMessageSize": 256,
+          "receiveMessageWaitTime": "0",
+          "queueARN": "arn:aws:sqs:us-east-2:558288721055:sqs-rms-adif"
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.9.6",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "adifparse",
+    "projectDescription": "parse adif sqs messages and insert into dynamodb table",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-2",
+    "platform": "AWS",
+    "platformRegions": {},
+    "language": "python",
+    "lastSave": 1585792962081
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "adifparse",
+      "url": "https://github.com/wmw1490/adifparse"
+    }
+  }
+}
